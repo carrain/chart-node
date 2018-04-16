@@ -34,7 +34,9 @@
  	 
  	.legend{font-size: 12px; font-family:Arial, Helvetica, sans-serif}
  	 
- 	</style>
+    </style>
+    
+    
  	<body>
  	<script type="text/javascript">
  	var dataset=[];
@@ -126,7 +128,7 @@
  	var yScale = d3.scale.linear()
  	.domain([0,maxdata])
  	.range([h-foot_height,head_height]);
- 	 
+
  	//定义横轴网格线
  	var xInner = d3.svg.axis()
  	.scale(xScale)
@@ -174,7 +176,7 @@
  	//定义纵轴
  	var yAxis = d3.svg.axis()
  	.scale(yScale)
- 	.orient("left")
+ 	.orient("right")
  	.ticks(10);
  	 
  	//添加纵轴
